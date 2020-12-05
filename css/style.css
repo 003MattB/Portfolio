@@ -266,7 +266,7 @@ a:hover {
     float: left;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 768px) {
     .carousel-card {
         display: block;
     }
