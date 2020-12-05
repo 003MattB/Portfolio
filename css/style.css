@@ -237,21 +237,7 @@ a:hover {
     padding: 0 5rem 0 5rem;
 }
 
-@media only screen and (max-width: 1080px) {
-    .carousel-card {
-        display: block;
-    }
-    .name {
-        font-size: 7em;
-    }
-    .sub-heading {
-        font-size: 2.5em;
-    }
-    #about {
-        width: auto;
-    }
 
-}
 
 .contact {
     min-height: 150px;
@@ -280,3 +266,18 @@ a:hover {
     float: left;
 }
 
+@media only screen and (max-width: 1080px) {
+    .carousel-card {
+        display: block;
+    }
+    .name {
+        font-size: 7em;
+    }
+    .sub-heading {
+        font-size: 2.5em;
+    }
+    #about {
+        width: auto;
+    }
+
+}
