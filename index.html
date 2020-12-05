@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matthew Bundy</title>
+    <!-- reset style to help with browser to browser consistency -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="content">
+    <section class="welcome">
+        <div class="full_height">
+            <div class="center">
+                <h1 class="name">Matthew<br>Bundy</h1>
+                <h2 class="sub-heading">Software Engineer</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutme">
+        <div class="full_height">
+            <h1 class="section-title pad-left">About Me</h1>
+            <div id="about" class="pad-x inline">
+                <p>My interest in creating software began when a coworker showed me how to automate some monotonous
+                    tasks at work, and I quickly became addicted! As I learned more, I started to make bigger and more
+                    complex programs to not only automate my work, but to check for human error. This eventually lead me
+                    to pursue an education in computer science and a career in software engineering.</p>
+                <p>I love the challenge of solving complicated problems and finding elegant solutions. I look at every
+                    project as a way to learn new skills and improve on the ones I already have. I'm interested in
+                    creating applications that solve real problems for real people.</p>
+                <p>I've spent the last four years earning my Bachelors at the <em>University of Minnesota</em> while
+                    working full time (36+ hours/week) as a CAM Engineer for a local circuit board shop. In December
+                    2020 I will receive my <em>Bachelors</em> in <em>Computer Science</em> with a <em>Minor</em> in <em>Interdisciplinary
+                        Design</em>.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="full_height">
+            <h1 class="section-title pad-left">Projects</h1>
+
+            <!-- Carousel -->
+            <div class="carousel-wrapper">
+                <div class="carousel row">
+                    <!-- Docs Card -->
+                    <div class="carousel-card initial">
+                        <div class="project-hero inline">
+                            <img src="static/doc-hero.jpg" alt="Hero image for Genesis documentation site.">
+                        </div>
+                        <div class="project-about inline col">
+                            <h6>Documentation For Genesis Interface Library</h6>
+                            <p>I wrote this library to interface with Genesis Cam Software scripting mechanism. I began
+                                this
+                                project in 2017 after I had been writing automation scripts for a while, before starting
+                                school. I realized that many scripts shared a lot of functionality, namely you need to
+                                get
+                                information about the job like: attributes and the structure. After finding a bug in one
+                                script, and needing to fix that bug in multiple scripts I decided I need to consolidate
+                                the
+                                common functionalities so this would not happen again. Thus came the "Job" module.</p>
+
+                            <p>This principle is pretty obvious to me now; Don't Repeat Yourself or DRY for short, but
+                                cut
+                                me some slack it was before I started my Bachelors.</p>
+
+                            <p>Over the years I've been adding more and more modules to the library. In order to keep
+                                all
+                                the documentation in a centralized location, I made this. It's an easy to navigate,
+                                online
+                                hub of information.</p>
+                            <a id="docs-code" href="https://github.com/003MattB/GenesisModDocs" target="_blank" >
+                                <svg id="code0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 79.1 70" style="enable-background:new 0 0 79.1 70;" xml:space="preserve">
+<polygon points="19,14.8 0.6,35.6 19,56.5 25,51.2 11.3,35.6 25,20.1 "/>
+<polygon points="54.1,20.1 67.8,35.6 54.1,51.2 60.1,56.5 78.4,35.6 60.1,14.8 "/>
+<rect x="5.6" y="31" transform="matrix(0.2118 -0.9773 0.9773 0.2118 -3.0869 66.2464)" width="67.8" height="8"/>
+</svg>
+                            </a>
+                            <a id="docs-view" href="https://003mattb.github.io/GenesisModDocs/" target="_blank"><svg version="1.1" id="view0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<polygon points="94,0 58.5,0 58.5,6 89.8,6 47.9,47.9 52.1,52.1 94,10.2 94,41.5 100,41.5 100,6 100,0 "/>
+<path d="M94,79.5c0,8-6.5,14.5-14.5,14.5h-59C12.5,94,6,87.5,6,79.5v-59C6,12.5,12.5,6,20.5,6H42V0H20.5C9.2,0,0,9.2,0,20.5v59
+	C0,90.8,9.2,100,20.5,100h59c11.3,0,20.5-9.2,20.5-20.5V58h-6V79.5z"/>
+</svg>
+</a>
+
+
+                        </div>
+                    </div>
+                    <!-- Schedule Builder Card -->
+                    <div class="carousel-card">
+                        <div class="project-hero inline">
+                            <img src="static/schedule-hero.jpg" alt="Hero image for Schedule Builder">
+                        </div>
+                        <div class="project-about inline">
+                            <h6>Schedule Builder</h6>
+                            <p>The idea for this came to me when I was trying to build a class schedule with the <a
+                                    href="https://schedulebuilder.umn.edu" target="_blank">University's Schedule
+                                Builder</a>,
+                                but it's 15 schedule limit would not come up with something that would work for my work
+                                schedule. I wanted to be able to see all available sections at once for all the classes
+                                I
+                                wanted
+                                to take. What I ended up doing was write all my desired classes, with every section, on
+                                note
+                                cards and lay them out on a week schedule. I was able to visualize a working schedule,
+                                but
+                                it
+                                was a ton of work.</p>
+                            <p>So, I came up with this. It pulls information from <a
+                                    href="https://github.com/umn-asr/courses"
+                                    target="_blank">umn-asr/courses API</a> and
+                                puts all available sections into a schedule. You can then manually remove cards form the
+                                schedule by clicking the x in the upper right corner. It will also keep track of the
+                                total
+                                credits which are in the schedule.</p>
+                            <a id="schedule-code" href="https://github.com/003MattB/ScheduleBuilderImproved"
+                               target="_blank">
+                                <svg id="code" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 79.1 70" style="enable-background:new 0 0 79.1 70;" xml:space="preserve">
+<polygon points="19,14.8 0.6,35.6 19,56.5 25,51.2 11.3,35.6 25,20.1 "/>
+<polygon points="54.1,20.1 67.8,35.6 54.1,51.2 60.1,56.5 78.4,35.6 60.1,14.8 "/>
+<rect x="5.6" y="31" transform="matrix(0.2118 -0.9773 0.9773 0.2118 -3.0869 66.2464)" width="67.8" height="8"/>
+</svg>
+                            </a>
+                            <a id="schedule-view" href="https://003mattb.github.io/ScheduleBuilderImproved/"
+                               target="_blank"><svg version="1.1" id="view1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<polygon points="94,0 58.5,0 58.5,6 89.8,6 47.9,47.9 52.1,52.1 94,10.2 94,41.5 100,41.5 100,6 100,0 "/>
+<path d="M94,79.5c0,8-6.5,14.5-14.5,14.5h-59C12.5,94,6,87.5,6,79.5v-59C6,12.5,12.5,6,20.5,6H42V0H20.5C9.2,0,0,9.2,0,20.5v59
+	C0,90.8,9.2,100,20.5,100h59c11.3,0,20.5-9.2,20.5-20.5V58h-6V79.5z"/>
+</svg>
+</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel__button--next"></div>
+                    <div class="carousel__button--prev"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <div class="pad-left">
+            <h1 class="section-title">Contact Me</h1>
+            <div class="contact-links">
+                <a id="linkedin-link" href="https://www.linkedin.com/in/matthew-bundy-6031581a0/" target="_blank">
+                    <svg version="1.1" id="linkedin-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 658.2 662" style="enable-background:new 0 0 658.2 662;" xml:space="preserve">
+    <style type="text/css">
+        .st0{fill:#FFFFFF;}
+    </style>
+    <path d="M0,47.4C0,21.2,21.8,0,48.6,0h560.6c26.9,0,48.6,21.2,48.6,47.4v567.2c0,26.2-21.8,47.4-48.6,47.4H48.6
+        C21.8,662,0,640.8,0,614.6L0,47.4L0,47.4z"/>
+    <path class="st0" d="M199.4,554.2V255.2h-99.4v298.9H199.4L199.4,554.2z M149.8,214.4c34.6,0,56.2-23,56.2-51.6
+        c-0.7-29.3-21.6-51.7-55.5-51.7c-34,0-56.2,22.3-56.2,51.7c0,28.7,21.6,51.6,54.9,51.6H149.8L149.8,214.4z M254.4,554.2h99.4V387.2
+        c0-8.9,0.7-17.9,3.3-24.2c7.2-17.9,23.5-36.3,51-36.3c35.9,0,50.3,27.4,50.3,67.6v159.9h99.4V382.8c0-91.8-49-134.5-114.4-134.5
+        c-53.6,0-77.1,30-90.2,50.4h0.7v-43.3h-99.4C255.7,283.3,254.4,554.2,254.4,554.2L254.4,554.2z"/>
+    </svg>
+                </a>
+                <a id="github-link" href="https://github.com/003MattB" target="_blank">
+                    <svg version="1.1" id="github-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 32.6 31.8" style="enable-background:new 0 0 32.6 31.8;" xml:space="preserve">
+    <style type="text/css">
+        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+    </style>
+    <path class="st0" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8
+        c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4
+        c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7
+        c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4
+        c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5
+        C32.6,7.3,25.3,0,16.3,0z"/>
+    </svg>
+                </a>
+                <span id="email" class="email text-right">Bundym63@gmail.com</span>
+            </div>
+        </div>
+
+    </section>
+</div>
+<script src="js/carousel.js"></script>
+</body>
+</html>

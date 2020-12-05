@@ -1,0 +1,282 @@
+body {
+    background-image: url("../static/shattered-island.gif");
+    color: #F6F8FF;
+    font-family: 'Nunito', Verdana;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 6em;
+}
+
+h3 {
+    font-size: 5em;
+}
+
+h4 {
+    font-size: 4em;
+}
+
+h5 {
+    font-size: 3em;
+}
+
+h6 {
+    font-size: 2em;
+}
+
+em {
+    font-weight: bold;
+    color: white;
+}
+
+a {
+    color: #23CE6B;
+}
+
+a:hover {
+    color: #FE4A49
+}
+#about {
+    width: 50%;
+}
+
+
+.content {
+    background: rgba(0, 0, 0, .1);
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.full_height {
+    height: 100vh;
+    overflow: auto;
+}
+
+.full_width {
+    width: 100vw;
+}
+
+.half_width {
+    width: 50vw;
+}
+
+.inline {
+    display: inline-block;
+
+}
+
+.border {
+    border: azure;
+    border-style: solid;
+    border-width: 10px;
+}
+
+.name {
+    font-size: 10em;
+}
+
+.project-hero {
+    max-width: 640px;
+    min-width: 50%;
+    height: auto;
+    max-height: 640px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.project-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.project-about p {
+    font-size: 1.25em;
+    line-height: 1.3em;
+    padding-top: 1em;
+}
+
+#code, #code0, #view0, #view1 {
+    margin: 10px;
+    height: 30px;
+    fill: #23CE6B;
+    width: auto;
+}
+
+
+#view1:hover, #view0:hover, #code:hover, #code0:hover {
+    fill: #FE4A49;
+}
+
+
+
+.sub-heading {
+    font-size: 3em;
+    padding-top: .5em;
+}
+
+.center {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aboutme p {
+    font-size: 1.25em;
+    padding-top: 1em;
+    line-height: 1.3em;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-wrapper * {
+    box-sizing: border-box;
+}
+
+.carousel {
+    transform-style: preserve-3d;
+}
+
+.carousel-card {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 4rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+    display: flex;
+}
+
+.carousel-card.initial, .carousel-card.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+}
+
+.carousel-card.prev {
+    transform: translateX(-100%);
+}
+
+.carousel-card.next {
+    transform: translateX(100%);
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #FFF;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1001; /* Sit on top of everything */
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.carousel__button--prev {
+    left: 0;
+}
+
+.carousel__button--next {
+    right: 0;
+}
+
+.carousel__button--prev::after,
+.carousel__button--next::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 54%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.bottom {
+    position: relative;
+    top: 100%;
+    transform: translateY(-50px);
+
+}
+
+.section-title {
+    font-size: 4em;
+}
+
+.pad-left {
+    padding-left: 5rem;
+}
+
+.pad-x {
+    padding: 0 5rem 0 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-card {
+        display: block;
+    }
+    .name {
+        font-size: 7em;
+    }
+    .sub-heading {
+        font-size: 2.5em;
+    }
+    #about {
+        width: auto;
+    }
+
+}
+
+.contact {
+    min-height: 150px;
+    background: #000000;
+}
+
+.contact svg {
+    height: 35px;
+    width: auto;
+    margin: 20px 25px 20px 25px;
+}
+
+#linkedin-link:hover, #github-link:hover {
+    cursor: pointer;
+}
+#linkedin-link:hover {
+    filter: invert(100%);
+}
+#github-link:hover {
+    filter: invert(25%);
+}
+
+.contact-links .email {
+    margin: 30px 25px 0 25px;
+    display: flex;
+    float: left;
+}
+
