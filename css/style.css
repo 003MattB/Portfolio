@@ -55,7 +55,10 @@ a:hover {
 
 .full_height {
     height: 100vh;
-    overflow: auto;
+}
+
+.full_height_min {
+    min-height: 100vh;
 }
 
 .full_width {
