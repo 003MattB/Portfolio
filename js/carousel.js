@@ -28,32 +28,21 @@ function setEventListeners() {
 
 // Next navigation handler
 function moveNext() {
-  // Check if moving
-  if (!moving) {
-    // If it's the last slide, reset to 0, else +1
-    if (slide === (totalItems - 1)) {
-      slide = 0;
-    } else {
-      slide++;
-    }
+    slide = (slide + 1) % totalItems
     // Move carousel to updated slide
     moveCarouselTo(slide);
-  }
+
 }
 // Previous navigation handler
 function movePrev() {
-  // Check if moving
-  if (!moving) {
-    // If it's the first slide, set as the last slide, else -1
-    if (slide === 0) {
-      slide = (totalItems - 1);
+    if (slide == 0) {
+        slide = (totalItems - 1);
     } else {
-      slide--;
+        slide = slide - 1;
     }
-
     // Move carousel to updated slide
     moveCarouselTo(slide);
-  }
+
 }
 
 function disableInteraction() {
@@ -74,26 +63,19 @@ function moveCarouselTo(slide) {
     disableInteraction();
     // Update the "old" adjacent slides with "new" ones
     let newPrevious = slide - 1;
-    let newNext = slide + 1;
+    let newNext = (slide + 1) % totalItems;
     let oldPrevious = slide - 2;
-    let oldNext = slide + 2;
-    // Test if carousel has more than three items
+    let oldNext = (slide + 2) % totalItems;
 
-    // Checks and updates if the new slides are out of bounds
-    if (newPrevious <= 0) {
-    oldPrevious = (totalItems - 1);
-    } else if (newNext >= (totalItems - 1)){
-    oldNext = 0;
-    }
-    // Checks and updates if slide is at the beginning/end
-    if (slide === 0) {
-    newPrevious = (totalItems - 1);
-    oldPrevious = (totalItems - 2);
-    oldNext = (slide + 1);
-    } else if (slide === (totalItems -1)) {
-    newPrevious = (slide - 1);
-    newNext = 0;
-    oldNext = 1;
+    if (slide == 0) {
+        newPrevious = (totalItems - 1);
+        if (newPrevious == 0) {
+            oldPrevious = 0;
+        } else {
+            oldPrevious = newPrevious - 1;
+        }
+    } else if (slide == 1) {
+        oldPrevious = (totalItems - 1);
     }
     // Now we've worked out where we are and where we're going,
     // by adding/removing classes we'll trigger the transitions.
@@ -102,8 +84,8 @@ function moveCarouselTo(slide) {
     items[oldNext].className = itemClassName;
     // Add new classes
     items[newPrevious].className = itemClassName + " prev";
-    items[slide].className = itemClassName + " active";
     items[newNext].className = itemClassName + " next";
+    items[slide].className = itemClassName + " active";
   }
 }
 
@@ -129,7 +111,7 @@ function handleTouchStart(evt) {
     const firstTouch = getTouches(evt)[0];
     xDown = firstTouch.clientX;
     yDown = firstTouch.clientY;
-};
+}
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
@@ -164,4 +146,4 @@ function handleTouchMove(evt) {
     /* reset values */
     xDown = null;
     yDown = null;
-};
+}
