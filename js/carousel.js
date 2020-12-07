@@ -62,21 +62,12 @@ function moveCarouselTo(slide) {
     // temporarily disable interactivity
     disableInteraction();
     // Update the "old" adjacent slides with "new" ones
-    let newPrevious = slide - 1;
+    let newPrevious = ((slide + totalItems) - 1) % totalItems;
     let newNext = (slide + 1) % totalItems;
-    let oldPrevious = slide - 2;
+    let oldPrevious = ((slide + totalItems) - 2 ) % totalItems;
     let oldNext = (slide + 2) % totalItems;
 
-    if (slide == 0) {
-        newPrevious = (totalItems - 1);
-        if (newPrevious == 0) {
-            oldPrevious = 0;
-        } else {
-            oldPrevious = newPrevious - 1;
-        }
-    } else if (slide == 1) {
-        oldPrevious = (totalItems - 1);
-    }
+
     // Now we've worked out where we are and where we're going,
     // by adding/removing classes we'll trigger the transitions.
     // Reset old next/prev elements to default classes
