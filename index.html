@@ -15,10 +15,11 @@
     <section class="welcome">
         <div class="full_height">
             <div class="center">
-                <h1 class="name">Matthew<br>Bundy</h1>
-                <h2 class="sub-heading">Software Engineer</h2>
+                <h1 class="name"><span>M</span>atthew<br><span>B</span>undy</h1>
+
             </div>
         </div>
+        <h2 class="sub-heading">Software Engineer</h2>
     </section>
 
     <section class="aboutme">
@@ -42,8 +43,14 @@
     </section>
 
     <section id="projects" class="projects">
-        <div class="full_height_min">
-            <h1 class="section-title pad-left">Projects</h1>
+        <div class="full_height_min proj-wrapper">
+            <h1 class="section-title pad-left">Featured Projects</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28.03" height="51.058" viewBox="0 0 28.03 51.058" id="left-arrow" class="carousel__button--prev">
+                <path id="Left_Arrow" data-name="Left Arrow" d="M3088.5,280.5l-21.994,21.994,21.994,21.994" transform="translate(-3064.006 -276.964)" fill="none" stroke="#fae8eb" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28.03" height="51.058" viewBox="0 0 28.03 51.058" id="right-arrow" class="carousel__button--next">
+              <path id="Right_Arrow" data-name="Right Arrow" d="M3088.5,280.5l-21.994,21.994,21.994,21.994" transform="translate(3092.036 328.023) rotate(180)" fill="none" stroke="#fae8eb" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+            </svg>
 
             <!-- Carousel -->
             <div class="carousel-wrapper">
@@ -188,18 +195,24 @@
     </svg>
                 </a>
                 <a id="github-link" href="https://github.com/003MattB" target="_blank">
-                    <svg version="1.1" id="github-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="0 0 32.6 31.8" style="enable-background:new 0 0 32.6 31.8;" xml:space="preserve">
-    <style type="text/css">
-        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-    </style>
-    <path class="st0" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8
-        c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4
-        c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7
-        c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4
-        c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5
-        C32.6,7.3,25.3,0,16.3,0z"/>
-    </svg>
+<!--                    <svg version="1.1" id="github-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--         viewBox="0 0 32.6 31.8" style="enable-background:new 0 0 32.6 31.8;" xml:space="preserve">-->
+<!--    <style type="text/css">-->
+<!--        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}-->
+<!--    </style>-->
+<!--    <path class="st0" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8-->
+<!--        c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4-->
+<!--        c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7-->
+<!--        c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4-->
+<!--        c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5-->
+<!--        C32.6,7.3,25.3,0,16.3,0z"/>-->
+<!--    </svg>-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.004" height="36" viewBox="0 0 37.004 36">
+  <g id="github-logo" transform="translate(-3600 86)">
+    <ellipse id="Ellipse_1" cx="17.89" cy="17.358" rx="17.89" ry="17.358" transform="translate(3600.977 -85.014)" fill="#fff"/>
+    <path id="GitHub-Mark" d="M18.445,0a18.479,18.479,0,0,0-5.884,35.985c.905.113,1.245-.453,1.245-.905V31.912c-5.092,1.132-6.224-2.49-6.224-2.49a4.673,4.673,0,0,0-2.037-2.716c-1.7-1.132.113-1.132.113-1.132A3.943,3.943,0,0,1,8.487,27.5a3.917,3.917,0,0,0,5.319,1.584,3.941,3.941,0,0,1,1.132-2.49c-4.074-.453-8.374-2.037-8.374-9.166a7.015,7.015,0,0,1,1.924-4.979,6.7,6.7,0,0,1,.226-4.753s1.584-.453,5.092,1.924a15.813,15.813,0,0,1,4.64-.566,20.828,20.828,0,0,1,4.64.566c3.508-2.376,5.092-1.924,5.092-1.924a7.085,7.085,0,0,1,.226,4.866,7.319,7.319,0,0,1,1.924,4.979c0,7.129-4.3,8.6-8.374,9.053A4.322,4.322,0,0,1,23.2,29.988V35.08c0,.453.339,1.018,1.245.905A18.479,18.479,0,0,0,18.445,0Z" transform="translate(3600 -86)" fill="#191717" fill-rule="evenodd"/>
+  </g>
+</svg>
                 </a>
                 <span id="email" class="email text-right">Bundym63@gmail.com</span>
             </div>

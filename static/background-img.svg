@@ -1,5 +1,5 @@
 <svg id="background-img" xmlns="http://www.w3.org/2000/svg" width="1874" height="1080" viewBox="0 0 1280 1080">
   <rect id="Rectangle_2" data-name="Rectangle 2" width="1600" height="1080" fill="#1f1e1e"/>
-  <path id="Polygon_1" data-name="Polygon 1" d="M329,0,658,636H0Z" transform="translate(496 444)" fill="#fae8eb"/>
-  <path id="Polygon_2" data-name="Polygon 2" d="M537,0l537,863H0Z" transform="translate(800 217)" fill="#fae8eb"/>
+  <path id="Polygon_1" data-name="Polygon 1" d="M329,0,658,636H0Z" transform="translate(496 444)" fill="#393939"/>
+  <path id="Polygon_2" data-name="Polygon 2" d="M537,0l537,863H0Z" transform="translate(800 217)" fill="#393939"/>
 </svg>
