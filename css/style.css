@@ -433,7 +433,7 @@ section.contact h1.section-title {
     }
 
     section, .project-about {
-        width: 100%
+        width: 100%;
         padding: 0;
 
     }
