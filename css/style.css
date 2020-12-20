@@ -375,18 +375,44 @@ section.contact h1.section-title {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
+     * , *:before, *:after{
+     box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     -webkit-box-sizing:border-box;
+     -ms-box-sizing:border-box;
+   }
+
+    section.welcome {
+        grid-column: none;
+        grid-row: none;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        max-width: 100%;
+        display: block;
     }
     .proj-wrapper, section.welcome {
         display: block;
-
+        grid-template-columns: none;
+        max-width: 100%;
     }
     section.welcome div.center {
         transform: none;
         top: auto;
         left: auto;
 
+    }
+    section.aboutme {
+        padding: 1em 0 1em 0;
+        grid-column: revert;
+        grid-row: revert;
+    }
+    section > .full_height_min {
+        width: 100%;
+        padding: 0 1em;
+    }
+    section.projects {
+        grid-column: revert;
+        grid-row: revert;
     }
     .sub-heading {
         padding-top: 1.5em;
@@ -395,47 +421,66 @@ section.contact h1.section-title {
     }
     #left-arrow, #right-arrow {
         position: relative;
-        transform: translateY(250px);
-        /*transform: translateX(-50%);*/
+        /*!*transform: translateX(-50%);*!*/
         z-index: 9999;
     }
+    #left-arrow {
+        left: 0;
+    }
+    #right-arrow {
+        right: 0;
+        transform: translate(-60px);
+    }
+
     section, .project-about {
-        padding: 2em 1em 1em 1em;
-        width: 100%;
+        width: 100%
+        padding: 0;
+
     }
     .project-about, .project-hero {
         margin: auto;
+        padding: 1em;
     }
+
+
     .content {
         /*background: rgba(0, 0, 0, .1);*/
         width: 100%;
         margin: auto;
         display: block;
-
+        grid-template-columns: none;
+        grid-template-rows: none;
     }
     .carousel-card {
         display: block;
         margin: auto;
         width: 100%;
     }
-
     .name {
-        font-size: 4.5em;
+        padding-top: 2em;
     }
-    .sub-heading {
-        font-size: 2em;
+    section.projects h1, .sub-heading {
+        padding-bottom: 1em;
     }
-    #about {
-        width: auto;
-    }
-    .section-title {
-        font-size: 2.5em;
-    }
-    .aboutme p {
-        font-size: 1em;
-        line-height: 1em;
 
-    }
+
+    /*.name {*/
+    /*    font-size: 4.5em;*/
+    /*}*/
+    /*.sub-heading {*/
+    /*    font-size: 2em;*/
+    /*}*/
+    /*#about {*/
+    /*    width: auto;*/
+    /*}*/
+    /*.section-title {*/
+    /*    font-size: 2.5em;*/
+    /*}*/
+    /*.aboutme p {*/
+    /*    font-size: 1em;*/
+    /*    line-height: 1em;*/
+
+    /*}*/
     .project-about p {
     font-size: 1em;
     line-height: 1em;
@@ -463,4 +508,7 @@ section.contact h1.section-title {
         height: 20px;
 
     }
+    /*html {*/
+    /*    max-width: 100vw;*/
+    /*}*/
 }
